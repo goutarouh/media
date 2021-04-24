@@ -9,9 +9,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="左"
-        android:enabled="false"
-        android:id="@+id/prev"
+        android:text="再生"
+        android:id="@+id/btPlay"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -19,26 +18,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:enabled="false"
-        app:layout_constraintTop_toBottomOf="@+id/prev"
+        app:layout_constraintTop_toBottomOf="@id/btPlay"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="再生"
-        android:id="@+id/stop_or_start" />
+        android:text="停止"
+        android:id="@+id/btStop" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:enabled="false"
-        app:layout_constraintTop_toBottomOf="@id/stop_or_start"
-        app:layout_constraintStart_toStartOf="parent"
-        android:id="@+id/next"
-        android:text="右" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/repeat"
-        android:text="repeat"
-        app:layout_constraintTop_toBottomOf="@id/next"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
